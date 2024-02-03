@@ -1,9 +1,5 @@
---MySQL Test server for the AirBnB project.
+-- Prepares a MySQL Test server for the project.
 CREATE DATABASE IF NOT EXISTS hbnb_test_db;
-CREATE DATABASE IF NOT EXISTS hbnb_test_db_fake;
-
-
 CREATE USER IF NOT EXISTS 'hbnb_test'@'localhost' IDENTIFIED BY 'hbnb_test_pwd';
-GRANT ALL PRIVILEGES ON hbnb_test_db. * TO 'hbnb_test'@'localhost';
-GRANT SELECT ON performance_schema. * TO 'hbnb_test'@'localhost';
-GRANT ALL PRIVILEGES ON hbnb_test_db_fake.* TO 'hbnb_test'@'localhost';
+GRANT ALL PRIVILEGES ON hbnb_test_db . * TO 'hbnb_test'@'localhost';
+GRANT SELECT ON performance_schema . * TO 'hbnb_test'@'localhost';
