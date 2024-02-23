@@ -25,6 +25,7 @@ def hbnb():
     return "HBNB"
 
 
+@app.route("/python", strict_slashes=False)
 @app.route("/c/<text>", strict_slashes=False)
 def cisfun(text):
     """Displays 'C' followed by the value of the text variable"""
