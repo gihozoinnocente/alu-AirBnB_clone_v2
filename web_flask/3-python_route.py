@@ -6,7 +6,8 @@ Routes:
      /: Displays 'Hello HBNB!'.
      /hbnb: Displays 'HBNB'.
      /c/<text>: Displays 'C' followed by the value of <text>.
-     /python/(<text>): Displays display 'Python', followed by the value of <text>
+     /python/(<text>): Displays display 'Python',
+     followed by the value of <text>
 """
 from flask import Flask
 
@@ -36,7 +37,7 @@ def cisfun(text):
 @app.route("/python/<text>", strict_slashes=False)
 def pythoniscool(text="is cool"):
     """Displays 'Python', followed by the value of <text>"""
-    text = text.replace("_"," ")
+    text = text.replace("_", " ")
     return "Python {}".format(text)
 
 
